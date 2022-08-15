@@ -75,7 +75,7 @@ def flush_criterion(s: set) -> bool:
     for i in range(4):
         suit = set()
         for j in range(13):
-            suit.add(j)
+            suit.add(i*13+j)
         if s.issubset(suit):
             return True
 
