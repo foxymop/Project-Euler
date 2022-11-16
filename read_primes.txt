@@ -1,0 +1,8 @@
+
+primes = []
+with open('primes_under_a_million.txt') as file:
+    for line in file:
+        strings = line.split(",")
+        strings.pop()
+        p = list(map(int, strings))
+        primes.extend(p)
